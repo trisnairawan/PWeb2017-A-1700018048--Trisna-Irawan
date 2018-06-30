@@ -1,0 +1,77 @@
+<html>
+</head>
+	<title>FORMULIR PENDAFTARAN KARTU TANDA MAHASISWA</title>
+	<style type="text/css">
+	<body { background-color:lightred; font-family:verdana; font-size:12px; font-color=red; }
+		#container { background-color:lightblue; width:450px; padding:20px 40px; margin:50px auto; border:0px solid #FF0000; box-shadow:0px 0px 2px #FF0000; }
+		input[type="text"] { width:200px; }
+		input[type="text"], textarea { padding:5px; margin:2px 0px; border: 1px solid #008000; }
+		input[type="submit"], input[type="reset"] { padding: 5px 20px; margin:2px 0px; font-weight:bold; cursor:pointer; }
+		#error { border:1px solid red; background:#ffc0c0; padding:5px; }
+		#borderimg { 
+		border: 4px solid transparent;
+		padding: 5px;
+		border-image: url(gambar-red.png) 100 round;
+		}
+	</style>
+</head>
+<body>
+ 
+	<div id="container" >
+		<div id="borderimg" align="center"><strong><font size="6" face="Courier New, Courier, mono"><marquee> SELAMAT DATANG DI FORMULIR PENDAFTARAN KARTU TANDA MAHASISWA</marquee></font></strong></div>
+<div align="center"><strong><font size="3" face="Courier New, Courier, mono" font color="red"><image src="logo-uad.png" width="40%"></font></strong></div>
+<p>Silahkan isi formulir di bawah ini untuk mendaftar</p>
+		<form action="proses_tampilan.php" method="post">
+			<p><b>Nama Lengkap     :</b><br><input type="text" name="nama"/></p>
+			<p><b>NIM              :</b><br><input type="text" name="nim"/></p>
+			<p><b>Tempat Lahir	   :</b><br><input type="text" name="tempat"/></p>
+			<P><b>Tanggal Lahir    :<input type="date" name="lahir">
+			<p><b>Alamat		   :</b><br><textarea name="alamat"></textarea></p>
+			<p><b>Email            :</b><br><input type="text" name="email"/></p>
+			<p><b>Prodi            :</b><select  name="prodi" id="prodi">
+			<option>Teknik Kimia</option>
+			<option>Teknik Elektro</option>
+			<option>Teknik Informatika</option>
+			<option>Teknik Pangan</option>
+			<option>Manajemen</option>
+			<option>Akuntansi</option>
+			<option>Manajemen Prosur</option>
+			<option>Bisnis Jasa Makanan</option>
+			<option>Ekonomi Pembangunan</option>
+			<option>Farmasi</option>
+			<option>Profesi Apoteker</option>
+			<option>Ilmu Hukum</option>
+			<option>Pendidikan Biologi</option>
+			<option>Pendidikan Matematika</option>
+			<option>Pendidikan Bahasa-Sastra Indonesia</option>
+			<option>Bimbingan & Konseling</option>
+			<option>Pendidikan Fisika</option>
+			<option>Pendidikan Pancasila dan Kewarganegaraan</option>
+			<option>PGSD</option>
+			<option>PGMIPA UNGGULAN P.Matematika</option>
+			<option>PGMIPA UNGGULAN P.Fisika</option>
+			<option>PGMIPA UNGGULAN P.Biologi</option>
+			<option>PAUD</option>
+			<option>Ilmu Kesehatan Masyarakat</option>
+			<option>Alih Jalur Ilmu Kesehatan Masyarakat</option>
+			<option>Psikologi</option>
+			</select></p>
+			<p><b>Fakultas         : </b><select name="fakultas" id="fakultas">
+			<option>Fakultas Teknologi Industri</option>
+			<option>Fakultas Kesehatan Masyarakat</option>
+			<option>Fakultas Farmasi</option>
+			<option>Fakultas Hukum</option>
+			<option>Fakultas Ekonomi</option>
+			<option>Fakultas Keguruan dan Ilmu Pendidikan</option>
+			<option>Fakultas Psikologi</option>
+			<option>Fakultas Sastra</option>
+			<option>Matematika dan Ilmu Pengetahuan Alam</option>
+			<option>Pascasarjana</option>
+			<option>Fakultas Agama Islam</option>
+			</select></p>
+			<p><input type="submit" name="Submit" value="Kirim" /> <input type="reset" name="Submit2" value="Batal" /></p>
+		</form>
+	</div>
+ 
+</body>
+</html>
